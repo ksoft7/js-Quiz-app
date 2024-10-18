@@ -160,8 +160,8 @@ function checkAnswer() {
 function displayResult() {
   quizContainer.style.display = "none";
   submitButton.style.display = "none";
-  retryButton.style.display = "inline-block";
-  showAnswerButton.style.display = "inline-block";
+  retryButton.style.display = "flex";
+  showAnswerButton.style.display = "flex";
   showingResult.innerHTML = `Good job You scored ${score} out of ${questionBank.length}`;
   showingResult.id = "width10rem";
   questionplace.style.display = "none";
@@ -172,7 +172,7 @@ function retryQuiz() {
   score = 0;
   inCorrectAnswer = [];
   quizContainer.style.display = "block";
-  submitButton.style.display = "inline-block";
+  submitButton.style.display = "flex";
   retryButton.style.display = "none";
   showAnswerButton.style.display = "none";
   resultContainer.innerHTML = "";
@@ -185,7 +185,7 @@ function retryQuiz() {
 function showAnswer() {
   quizContainer.style.display = "none";
   submitButton.style.display = "none";
-  retryButton.style.display = "inline-block";
+  retryButton.style.display = "flex";
   showAnswerButton.style.display = "none";
   let inCorrectAnswersHtml = "";
   for (let i = 0; i < inCorrectAnswer.length; i++) {
