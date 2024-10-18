@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <nav>
+          <div class="logo"><h1>IQTest</h1></div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+          <div class="btn-container">
+            <a href="" class="btn1">Register</a>
+            <a href="" class="btn2">Sign in</a>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </nav>
+      </header>
+
+      <article class="flex-divs">
+        <div class="left">
+          <div class="text-div">
+            <h1 class="heading-container" id="remove-result">QUIZ TEST</h1>
+            <p id="ques"></p>
+          </div>
+
+          <div class="display-count" id="displaying-count"><p>1/2</p></div>
+        </div>
+
+        <div class="container right">
+          <div id="quiz"></div>
+          <div class="result" id="result"></div>
+          <div>
+            <button id="submit" class="button">continue</button>
+            <button id="retry" class="retrybtn">retry</button> <br /><br />
+            <button id="showAnswer" class="button">show result</button>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+
+  <script src="script.js"></script>
+</html>
